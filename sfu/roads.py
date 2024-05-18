@@ -132,7 +132,7 @@ class SFURoads(SFUBase):
             fetchedData.raise_for_status()
         except requests.exceptions.HTTPError:
             await ctx.send(
-                ":warning: This webcam is currently unavailable! Please try again later"
+                ":warning: This webcam is currently unavailable! Please try again later."
             )
             # self.logger.error(exc_info=True)
             return
