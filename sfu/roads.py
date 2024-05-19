@@ -134,7 +134,6 @@ class SFURoads(SFUBase):
             await ctx.send(
                 ":warning: This webcam is currently unavailable! Please try again later."
             )
-            # self.logger.error(exc_info=True)
             return
         except requests.adapters.ConnectionError:
             await ctx.send(":warning: Unable to retrieve webcam image! Please try again later.")
